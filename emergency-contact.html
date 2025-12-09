@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact - Please Help</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .alert-header {
+            background: #dc3545;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .alert-header h1 {
+            font-size: clamp(20px, 6vw, 28px);
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+        
+        .alert-header p {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+        }
+        
+        .info-box p {
+            color: #856404;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .contact-section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-button {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .sms-button {
+            background: #28a745;
+            color: white;
+        }
+        
+        .sms-button:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+        
+        .call-button {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .call-button:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+        }
+        
+        .phone-number {
+            display: block;
+            font-size: 14px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #666;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="alert-header">
+            <h1>⚠️ PLEASE HELP ⚠️</h1>
+            <p>This person appears confused and lost.<br>Please contact their family immediately.</p>
+        </div>
+        
+        <div class="info-box">
+            <p><strong>Thank you for helping!</strong> Please use one of the buttons below to contact this person's family or caregiver right away.</p>
+        </div>
+        
+        <div class="contact-section">
+            <h2 class="section-title">📱 Send Text Message</h2>
+            
+            <a href="sms:+12042913835?body=Hello,%20I%20found%20someone%20who%20appears%20confused%20and%20lost.%20I%27m%20calling%20from%20their%20emergency%20card.%20Please%20contact%20me%20as%20soon%20as%20possible." class="contact-button sms-button">
+                <span class="icon">💬</span> Text Contact 1
+                <span class="phone-number">+1-204-291-3835</span>
+            </a>
+            
+            <a href="sms:+14313362734?body=Hello,%20I%20found%20someone%20who%20appears%20confused%20and%20lost.%20I%27m%20calling%20from%20their%20emergency%20card.%20Please%20contact%20me%20as%20soon%20as%20possible." class="contact-button sms-button">
+                <span class="icon">💬</span> Text Contact 2
+                <span class="phone-number">+1-431-336-2734</span>
+            </a>
+            
+            <a href="sms:+14318669082?body=Hello,%20I%20found%20someone%20who%20appears%20confused%20and%20lost.%20I%27m%20calling%20from%20their%20emergency%20card.%20Please%20contact%20me%20as%20soon%20as%20possible." class="contact-button sms-button">
+                <span class="icon">💬</span> Text Contact 3
+                <span class="phone-number">+1-431-866-9082</span>
+            </a>
+        </div>
+        
+        <div class="contact-section">
+            <h2 class="section-title">📞 Call Directly</h2>
+            
+            <a href="tel:+12042532734" class="contact-button call-button">
+                <span class="icon">📞</span> Call Emergency Contact
+                <span class="phone-number">+1-204-253-2734</span>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>🏥 If this is a medical emergency, call 911 first</p>
+        </div>
+    </div>
+</body>
+</html>
